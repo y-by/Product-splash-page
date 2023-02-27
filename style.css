@@ -7,7 +7,6 @@ body {
 /* =================
   Typography 
  ================= */
-
 h1 {
   font-weight: 400;
   font-size: 2.5rem;
@@ -81,8 +80,31 @@ p {
 /* =================
   Form
  ================= */
- 
+ input {
+  width: 100%;
+  margin-block-end: 0.75em;
+  padding: 0.5em;
 
+  border: solid 2px #d1d5db;
+  border-radius: 5px;
+ }
+
+ input:focus,
+ button:focus {
+  /* border: none; */
+  outline-color: #8a71ec;
+  outline-offset: 0.5em;
+  outline-style: solid;
+  outline-width: .25em;
+  background: #e6e8ec;
+ }
+
+ button {
+  border: none;
+  border-radius: 5px;
+  padding: 1em 2em;
+
+ }
 /* =================
   Media queries 
  ================= */

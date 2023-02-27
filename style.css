@@ -1,6 +1,7 @@
 body {
   font-family: 'Source Sans Pro', sans-serif;
   color: #404040;
+  margin: 0;
 }
 
 /* =================
@@ -9,6 +10,13 @@ body {
 
 h1 {
   font-weight: 400;
+  font-size: 2.5rem;
+  text-shadow: 0px 2px  #816fca;
+}
+
+h2 {
+  font-size: 2.25rem;
+  margin-block: 0.375em;
 }
 
 .beta-text { 
@@ -18,13 +26,35 @@ h1 {
 .subheading {
   color: #575757;
   font-weight: 900;
+  margin-bottom: .5em;
 }
+
+p {
+  font-size: 1.125rem;
+  line-height: 1.35;
+}
+/* =================
+    Flex containers
+   ================= */
+   .intro,
+   .main-content {
+     display: flex;
+     flex-direction: column;
+   }
+
 
 /* =================
   Intro
  ================= */
  
-.intro { 
+.intro {
+
+  justify-content: center;
+  align-items: center;
+  
+  min-height: 250px;
+  text-align: center;
+
   color: #fff;
   background-color: #9480e4;
 }
@@ -32,7 +62,18 @@ h1 {
 /* ====================
   Main content
  ==================== */
+.main-content {
+  justify-content: center;
+  align-items: center;
 
+  padding-block-start: 2.5em;
+  padding-inline: 2em;
+}
+
+.img-main {
+  width: 7.5em;
+  border-radius: 50%;
+}
 
 /* =================
   Form

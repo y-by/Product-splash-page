@@ -1,0 +1,44 @@
+body {
+  font-family: 'Source Sans Pro', sans-serif;
+  color: #404040;
+}
+
+/* =================
+  Typography 
+ ================= */
+
+h1 {
+  font-weight: 400;
+}
+
+.beta-text { 
+  font-weight: 900;
+}
+
+.subheading {
+  color: #575757;
+  font-weight: 900;
+}
+
+/* =================
+  Intro
+ ================= */
+ 
+.intro { 
+  color: #fff;
+  background-color: #9480e4;
+}
+
+/* ====================
+  Main content
+ ==================== */
+
+
+/* =================
+  Form
+ ================= */
+ 
+
+/* =================
+  Media queries 
+ ================= */

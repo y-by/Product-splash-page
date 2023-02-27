@@ -60,7 +60,9 @@ p {
   text-align: center;
 
   color: #fff;
-  background-color: #9480e4;
+  background: #9480e4 url("./images/intro-bg.png");
+  background-size: cover;
+  background-position: center center;
 }
 
 /* ====================
@@ -114,9 +116,5 @@ p {
     justify-content: center;
     padding-block-start: 0;
   }
-
-
-
-
 
  }

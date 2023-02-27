@@ -45,6 +45,7 @@ p {
 .main-content {
   display: flex;
   flex-direction: column;
+  padding-inline: 2em;
 }
 
 
@@ -67,9 +68,7 @@ p {
  ==================== */
 .main-content {
   align-items: center;
-
   padding-block-start: 2.5em;
-  padding-inline: 2em;
 }
 
 .img-main {
@@ -85,19 +84,39 @@ p {
 /* =================
   Media queries 
  ================= */
- @media (min-width: 576px) {
+ @media (min-width: 690px) {
   body {
     display: flex;
   }
+
+  h1 {
+    font-size: 5vw;
+  }
+
+  h2 {
+    font-size: 2.625rem;
+  }
+  
+  .beta-text {
+    font-size: 1.125rem;
+  }
+  
   .intro,
   .main-content {
     flex: 1;
   }
+
   .intro {
     min-height: 100vh;
   }
+
   .main-content {
     justify-content: center;
     padding-block-start: 0;
   }
+
+
+
+
+
  }

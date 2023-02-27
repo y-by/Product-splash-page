@@ -39,21 +39,19 @@ p {
   line-height: 1.35;
 }
 /* =================
-    Flex containers
-   ================= */
-   .intro,
-   .main-content {
-     display: flex;
-     flex-direction: column;
-   }
+  Flex containers
+  ================= */
+.intro,
+.main-content {
+  display: flex;
+  flex-direction: column;
+}
 
 
 /* =================
   Intro
  ================= */
- 
 .intro {
-
   justify-content: center;
   align-items: center;
   
@@ -68,7 +66,6 @@ p {
   Main content
  ==================== */
 .main-content {
-  justify-content: center;
   align-items: center;
 
   padding-block-start: 2.5em;
@@ -88,3 +85,19 @@ p {
 /* =================
   Media queries 
  ================= */
+ @media (min-width: 576px) {
+  body {
+    display: flex;
+  }
+  .intro,
+  .main-content {
+    flex: 1;
+  }
+  .intro {
+    min-height: 100vh;
+  }
+  .main-content {
+    justify-content: center;
+    padding-block-start: 0;
+  }
+ }

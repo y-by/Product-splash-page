@@ -8,5 +8,6 @@
 - Style form elements
 - Flexbox order
 - Modifier classes
-- Box- sizing
+- Box-sizing
+
 ### We having fun ..)

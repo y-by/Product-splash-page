@@ -1,3 +1,7 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
 body {
   font-family: 'Source Sans Pro', sans-serif;
   color: #404040;
@@ -37,6 +41,28 @@ p {
   font-size: 1.125rem;
   line-height: 1.35;
 }
+
+.beta-text,
+.top-text,
+.subheading {
+    text-transform: uppercase;
+}
+
+.top-text {
+    font-size: 0.875rem;
+    font-weight: 900;
+    padding-top: 0.25em;
+    border-top: 5px solid;
+    order: -1;
+    margin: 0 auto;
+}
+
+.fine-print {
+    font-size: 0.75rem;
+    letter-spacing: 1px;
+    color: #858585;
+}
+
 /* =================
   Flex containers
   ================= */
@@ -52,16 +78,14 @@ p {
   Intro
  ================= */
 .intro {
-  justify-content: center;
-  align-items: center;
-  
+  justify-content: space-between;
   min-height: 250px;
   text-align: center;
-
   color: #fff;
   background: #9480e4 url("./images/intro-bg.png");
   background-size: cover;
   background-position: center center;
+  padding-bottom: 1.5em;
 }
 
 /* ====================
@@ -77,32 +101,34 @@ p {
   border-radius: 50%;
 }
 
+.main-content p,
+form {
+  max-width: 450px;
+}
+
 /* =================
   Form
  ================= */
+input,
+.btn {
+  font-family: inherit;
+  width: 100%;
+}
 
  input {
-  font-family: inherit;
-  width: calc(100% - 1em);
   margin-block-end: 0.75em;
   padding: 0.5em;
-
   border: solid 2px #d1d5db;
   border-radius: 5px;
  }
 
  .btn {
-  width: 100%;
   border: none;
   border-radius: 5px;
-  
   padding: 1em 0;
-  
-  font-family: inherit;
   text-transform: uppercase;
   font-size: 1em;
   font-weight: 600;
-  
   cursor: pointer;
 }
 
@@ -110,9 +136,7 @@ p {
   background-color: #8a71ec;
   color: whitesmoke;
   margin-block-start: 1em;
-
 }
-
 
 input:focus,
 .btn:focus {
@@ -127,7 +151,7 @@ input:focus,
 
 .btn:hover,
 .btn:focus {
-  background-color: #b7a7f6;
+  background: #b7a7f6;
   color: whitesmoke;
   outline-offset: 0.5em;
 
